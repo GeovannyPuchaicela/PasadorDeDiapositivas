@@ -12,14 +12,14 @@ const btnBack = document.getElementById("btnRetroceder");
 
 // Rutas de imágenes (aquí tú pones tus propios archivos)
 let imagenes = [
-    "Diapositiva1.jpeg",
-    "Diapositiva2.jpeg",
-    "Diapositiva3.jpeg",
-    "Diapositiva4.jpeg",
-    "Diapositiva5.jpeg",
-    "Diapositiva6.jpeg",
-    "Diapositiva7.jpeg",
-    "Diapositiva8.jpeg"
+    "recursos/Diapositiva1.jpeg",
+    "recursos/Diapositiva2.jpeg",
+    "recursos/Diapositiva3.jpeg",
+    "recursos/Diapositiva4.jpeg",
+    "recursos/Diapositiva5.jpeg",
+    "recursos/Diapositiva6.jpeg",
+    "recursos/Diapositiva7.jpeg",
+    "recursos/Diapositiva8.jpeg"
 ];
 
 // Estado inicial
