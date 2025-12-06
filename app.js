@@ -9,6 +9,8 @@ const totalSlidesSpan = document.getElementById("totalSlides");
 
 const btnNext = document.getElementById("btnAvanzar");
 const btnBack = document.getElementById("btnRetroceder");
+const toggleBtn = document.querySelector(".toggle-btn");
+const lista = document.getElementById("lista");
 
 // Rutas de imágenes (aquí tú pones tus propios archivos)
 let imagenes = [
@@ -47,16 +49,18 @@ function mostrarSlide(n) {
 
 // Botón siguiente
 btnNext.addEventListener("click", () => {
-    slideActual++;
-    if (slideActual > totalSlides) slideActual = 1;
-    mostrarSlide(slideActual);
+    if (slideActual < totalSlides) {
+        slideActual++;
+        mostrarSlide(slideActual);
+    }
 });
 
 // Botón atrás
 btnBack.addEventListener("click", () => {
-    slideActual--;
-    if (slideActual < 1) slideActual = totalSlides;
-    mostrarSlide(slideActual);
+    if (slideActual > 1) {
+        slideActual--;
+        mostrarSlide(slideActual);
+    }
 });
 
 // Click en la lista
@@ -64,6 +68,11 @@ listaItems.forEach((li, index) => {
     li.addEventListener("click", () => {
         mostrarSlide(index + 1);
     });
+});
+
+// Toggle del menú lateral
+toggleBtn.addEventListener("click", () => {
+    lista.classList.toggle("active");
 });
 
 // Iniciar con el slide 1
