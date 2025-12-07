@@ -12,7 +12,7 @@ const btnBack = document.getElementById("btnRetroceder");
 const toggleBtn = document.querySelector(".toggle-btn");
 const lista = document.getElementById("lista");
 
-// Rutas de imágenes (aquí tú pones tus propios archivos)
+// Rutas de imágenes
 let imagenes = [
     "recursos/Diapositiva1.jpeg",
     "recursos/Diapositiva2.jpeg",
