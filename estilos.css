@@ -70,6 +70,11 @@
   border-radius: 6px;
   border: 2px solid #b4b3b3;
 }
+.boton-personalizado.disabled {
+  background-color: #6b6a6a;
+  border: 2px solid #6b6a6a;
+  opacity: 0.6;
+}
 .contador{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;

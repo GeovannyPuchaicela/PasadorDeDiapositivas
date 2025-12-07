@@ -45,6 +45,20 @@ function mostrarSlide(n) {
 
     // Poner clase activa
     listaItems[n - 1].classList.add("activo");
+
+    // Actualizar estado del botón next
+    if (slideActual >= totalSlides) {
+        btnNext.classList.add("disabled");
+    } else {
+        btnNext.classList.remove("disabled");
+    }
+
+    // Actualizar estado del botón back
+    if (slideActual <= 1) {
+        btnBack.classList.add("disabled");
+    } else {
+        btnBack.classList.remove("disabled");
+    }
 }
 
 // Botón siguiente
